@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* UTILITIS */
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper{
+    height: calc(100vh - 80px);
+   
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+
+
+/* CREAZIONE STRUTTURA  */
+
+.left-bar, main{
+    float: left;
+}
+
+.left-bar{
+    height:100%;
+    width: 220px;
+    background-color: black;
+  
+}
+
+   
+main{
+    width: calc(100% - 220px);
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(23, 27, 46);
+    position: relative;
+    color: white;
+}
+
+.header{
+    height: 80px;
+    width: calc(100% - 220px);
+    position: fixed;
+    right: 0;
+    top: 0;
+   
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+
+
+.player{
+    background-color: #333;
+    height: 80px;
+
+}
+
+
+/* LEFT-BAR */
+
+
+.left-bar{
+    color: white;
+    position: relative;
+}
+
+.left-bar a{
+    color: grey;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.logo{
+    width: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.icons{
+    width: 30px;
+}
+
+
+
+.list li{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.home2{
+    border-left: 5px solid greenyellow;
+}
+.list a:hover{
+    color: white;
+}
+
+.playlist h5{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+li img{
+    width: 100%;
+}
+
+.playlist li{
+    margin-left: 20px;
+    list-style-type: none;
+    margin-bottom: 10px;
+    margin-top:10px ;
+    color: grey;
+    font-size: 12px;
+    
+}
+
+.list-icon{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.fa-plus-square:before {
+    content: "\f0fe";
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.user{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.up{
+    border-bottom: 2px solid white;
+    margin-left: 20px;
+}
+
+
+/* HEADER */
+
+.up-grade{
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+
+
+
+/* MAIN */
+
+/* INSERIMENTO MENU' */
+
+.menu ul li{
+    margin-top: 90px;
+    display: inline-block;
+    padding: 10px;
+}
+
+.menu a{
+    text-decoration: none;
+    color:grey;
+    font-weight: 400;
+}
+
+.menu ul{
+    text-align: center;
+}
+
+.home{
+    border-bottom: 3px solid greenyellow;
+    border-width: 5px;
+}
+.menu a:hover{
+    color: white; 
+}
+
+/* CREAZIONE GRIGLIA PER ISERIMENTO  COPERTINE PODCAST */
+
+
+
+h2{
+    margin-top: 40px;
+    margin-bottom: 15px;
+    margin-left: 28px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    
+
+}
+
+.row-text{
+    display: flex;
+    justify-content: center;
+}
+
+.col{
+    /* flex-grow: 1; */
+    width: calc( 100% / 6 - 16px);
+  
+    margin: 8px;
+    justify-items: center;
+
+}
+
+
+
+
+/* INSERIMENTO DIDASCALIA PODCAST */
+
+ h5{
+     text-align:center;
+   padding: 2px;
+}
+
+ p{
+    font-size: 12px;
+    margin-top: 5px;
+    color: rgb(189, 189, 189);
+}
+
+/* <!-- SECONDA SEZIONE BRANI --> */
+#caption-playlist{
+    margin-left: 28px;
+    font-size: 12px;
+    margin-bottom: 20px;
+    color: rgb(189, 189, 189);
+
+}
+
+
+/* <!-- TERZA SEZIONE DI BRANI --> */
+
+
+.artista img{
+    width: 100%;
+    border-radius: 50%;
+    margin: 10px;
+    
+}
+
+/* FOOTER */
+footer{
+    color: white;
+}
+
+.row-footer{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    margin-left: 10px;
+    margin-right: 10px;
+    /* margin-bottom: 20px; */
+    align-items: center;
+}
+
+.col-10{
+    width: calc((100% / 12) * 10 );
+    max-width: 100%;
+}
+
+.col-2{
+    width: calc((100% / 12) * 2 );
+    max-width: 100%;
+    margin-top: 15px;
+}
+
+.row-icons{
+    display: flex;
+    justify-content: center;
+}
+
+.row-icons, .fas{
+    padding: 10px;
+}
+
+#player-sinister{
+    margin-left: 5px;
+    align-items: center ;
+}
+
+.row-second-icons{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+
+
+/* Extra small devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap */
+
+/* Small  */
+@media (min-width: 576px) { 
+
+
+ }
+
+ /* Medium  */
+@media (min-width: 768px) {  }
+
+ /* Large  */
+ @media (min-width: 992px) {  }
+
+ /* Extra  */
+@media (min-width: 1200px) {  }
